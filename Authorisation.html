@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Authorisation</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+        <link rel="stylesheet" type="text/css" href="css/w3lib.css">
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script><!-- JQuery JS Library -->
+		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script><!-- Parse JS Library -->
+		<!-- Custom JavaScript Files -->
+        <script type="text/javascript" src="js/parseJS.js"></script>
+	</head>
+
+	<body>
+		<div id="statusBar"></div>
+		<div class="w3-container w3-center w3-animate-opacity">
+
+			<header>
+				<h2>MyGroceryPal</h2>
+			</header>
+
+			<div id="content">
+				<br>
+
+				<ul class="w3-navbar w3-light-grey w3-round-xxlarge">
+					<li style="width:50%"><a href="#" class="w3-border" onclick="openOption('loginOption')">Login</a></li>
+					<li style="width:50%"><a href="#" class="w3-border" onclick="openOption('registerOption')">Register</a></li>
+				</ul>
+
+				<div id="loginOption" class="w3-container option">
+					<br>
+					<form class="w3-container w3-card-4 w3-light-grey w3-round-xxlarge">
+						<h3>Login</h3>
+						<p>
+							<label>Username</label>
+							<input id="login-username" class="w3-input w3-border w3-round-xxlarge" type="text">
+						</p>
+						<p>
+							<label>Password</label>
+							<input id="login-password" class="w3-input w3-border w3-round-xxlarge" type="password">
+						</p>
+						<div class="w3-btn-group">
+							<input id="login" class="w3-btn w3-green w3-round-xxlarge" style="width:50%" type="button" value="Login">
+							<input class="w3-btn w3-red w3-round-xxlarge" style="width:50%" type="reset" value="Clear">
+							<br></br>
+						</div>
+					</form>
+				</div>
+
+				<div id="registerOption" class="w3-container option">
+					<br>
+					<form class="w3-container w3-card-4 w3-light-grey w3-round-xxlarge">
+
+						<h3>Create Account</h3>
+						<p>
+						  <label>Full Name</label>
+						  <input id="signup-fullname" class="w3-input w3-border w3-round-xxlarge" name="FullName" type="text">
+						</p>
+						<p>
+						  <label>E-mail Address</label>
+						  <input id="signup-email" class="w3-input w3-border w3-round-xxlarge" name="E-mail" type="text">
+						</p>
+						<p>
+						  <label>Create Username</label>
+						  <input id="signup-username" class="w3-input w3-border w3-round-xxlarge" name="Username" type="text">
+						</p>
+						<p>
+						  <label>Password</label>
+						  <input id="signup-password" class="w3-input w3-border w3-round-xxlarge" name="Password" type="password">
+						</p>
+						<div class="w3-btn-group">
+						  <input id="signup" class="w3-btn w3-green w3-round-xxlarge" style="width:50%" type="submit" value="Sign Up">
+						  <input class="w3-btn w3-red w3-round-xxlarge" style="width:50%" type="reset" value="Clear">
+						  <br></br>
+						</div>  
+					</form>
+				</div>
+			</div>
+
+			<footer>
+				<h5>Connel McGovern - Final Year Project</h5>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/authenticationForm.js"></script>
+	</body>
+</html> 

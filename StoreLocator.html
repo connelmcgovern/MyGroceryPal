@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StoreLocator</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta charset="utf-8"/> Firefox warning message, when browser testing -->
+
+        <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+        <link rel="stylesheet" type="text/css" href="css/w3lib.css">
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"><!-- For Nav Icons -->
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script><!--JQuery JS Library-->
+        <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script><!--Parse JS Library-->
+        <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCDIAgz5pf40Bio8vsHSPAleh2dAV2J1i0"></script><!--GoogleMaps API-->
+
+        <!-- Custom JavaScript Files -->
+        <script type="text/javascript" src="js/parseJS.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
+
+    </head>
+
+    <body>
+        <div id="statusBar"></div>
+            <nav class="w3-sidenav w3-light-grey w3-card-2" style="display:none">
+                <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-blue w3-large">Close &times;</a>
+                <a class = "w3-border-bottom w3-large" href="Homepage.html"> <i class="fa fa-home"></i> Home</a>        
+                <a class = "w3-border-bottom w3-large" href="ShoppingList.html"> <i class="fa fa-pencil-square-o"></i>Shopping List</a>        
+                <a class = "w3-border-bottom w3-large" href="ProductSearch.html"> <i class="fa fa-search"></i> Product Search</a>        
+                <a class = "w3-border-bottom w3-large" href="StoreLocator.html"> <i class="fa fa-globe"></i> Store Locator</a>        
+                <a id="logout" class = "w3-border-bottom w3-large"><i class="fa fa-close"></i> LOGOUT</a>
+                <div id="navDiv"></div>        
+            </nav>
+
+
+            <div id="main" class="w3-container w3-center w3-animate-opacity">
+
+            <header>
+                <div align="left"><span class="w3-opennav w3-large" onclick="w3_open()"><u>&#9776;Menu</u></span></div>
+                <h2 align="center">MyGroceryPal</h2>
+            </header>
+
+                <div id="content">
+                    <section>
+                        <article>
+                            <h4><b>Store Locator</b></h4>
+                        </article>
+
+                        <article>
+                            <div align="center" id="googleMap" style="width=device-width;height:420px;"></div><br>
+                        </article>
+                    </section>
+                </div>
+                
+                <footer>
+                    <h5>Connel McGovern - Final Year Project</h5>
+                </footer>
+            </div>
+ 
+        <script type="text/javascript" src="js/googleStoreLocator.js"></script>
+    </body>
+</html> 

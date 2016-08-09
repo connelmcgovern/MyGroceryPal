@@ -1,0 +1,60 @@
+#statusBar
+{
+	background-color:white;
+	position: fixed;
+	height: 5%;
+	margin: 0%;
+	top:0;
+	right:0;
+	left:0;
+}
+
+#content
+{
+	margin-bottom: 12%;
+}
+
+body 
+{
+   margin-top: 8%; 
+}
+
+header, footer
+{
+	color:white;
+	background-color:#0073e6;
+}
+
+div
+{
+	margin-bottom: 30px;
+}
+
+footer 
+{
+	text-align: center;
+	margin: 0%;
+	position: fixed; /*fixed moves to the bottom of the scrolled page */
+	left:1.5%;
+    right:1.5%;
+	bottom: 1.5%;;
+}
+#listDiv
+{
+	padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+#totalPrice
+{
+	padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+#navDiv
+{
+	padding-top: 10px;
+    padding-left: 20px;
+}
